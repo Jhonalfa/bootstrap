@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de videojuegos</title>
+  <!-- Librería CSS Bootstrap v5.2 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Tienda de videojuegos</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+           <!-- <a class="nav-link" href="#">Productos</a>-->
+          </li>
+          <li class="nav-item">
+           <!-- <a class="nav-link" href="#">Ofertas</a>-->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sección Contacto -->
+  <section id="contacto">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Contacto</h2>
+          <p>¿Tienes alguna pregunta o necesitas ayuda para encontrar el juego perfecto? ¡No dudes en contactarnos! Puedes llenar el formulario de contacto a continuación o enviarnos un correo electrónico a info@tiendadevideojuegos.com.</p>
+        </div>
+        <div class="col-md-6">
+          <form action="enviar.php" method="post">
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" name="nombre" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Jumbotron -->
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-4">Bienvenidos a nuestra tienda de videojuegos</h1>
+      <p class="lead">Aquí encontrarás una amplia selección de videojuegos y consolas de alta calidad a precios competitivos. ¡Explora nuestro catálogo y encuentra el juego perfecto para ti!</p>
+      <hr class="my-4">
+      <p>¿Tienes alguna pregunta o necesitas ayuda para encontrar el juego perfecto? ¡No dudes en contactarnos!</p>
+      <a class="btn btn-primary btn-lg" href="#contacto" role="button">Contacto</a>
+    </div>
+  </div>
+  <br>
+
+  <!-- Tarjetas de productos -->
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <!-- Primera tarjeta -->
+        <div class="card" style="background-color: #13e2d8;">
+          <div class="card-header">
+            <h4 class="text-center">Nintendo Switch</h4>
+          </div>
+          <img class="card-img-top" src="https://th.bing.com/th/id/R.9a77f32b7910de9c3044c31faac05ede?rik=2JLspPmwuujNbw&pid=ImgRaw&r=0">

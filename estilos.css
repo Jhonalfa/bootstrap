@@ -1,0 +1,34 @@
+body {
+    background-color: #f8f9fa;
+  }
+
+  .jumbotron {
+    background-image: url('https://images.unsplash.com/photo-1521747116042-5a810fda9664');
+    background-size: cover;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  .card {
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .card-img-top {
+    border-radius: 5px 5px 0 0;
+  }
+
+  .nav-link {
+    color: #343a40 !important;
+    font-weight: bold;
+  }
+
+  #carruselEventos {
+    margin-top: 20px;
+  }
